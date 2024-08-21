@@ -4,8 +4,10 @@ import {useEffect} from 'react'
 import {useColorScheme} from 'react-native'
 import {DarkTheme, DefaultTheme, ThemeProvider} from '@react-navigation/native'
 import {useFonts} from 'expo-font'
-import {SplashScreen, Stack} from 'expo-router'
+import {Link, SplashScreen, Stack} from 'expo-router'
 import {Provider} from '@/app/Provider'
+import {PlusSquare, Save} from "@tamagui/lucide-icons";
+import {isWeb} from "tamagui";
 
 export {
     // Catch any errors thrown by the Layout component.
@@ -50,7 +52,33 @@ function RootLayoutNav() {
                     <Stack.Screen
                         name="index"
                         options={{
-                            title: "Home Page"
+                            title: "Home Page",
+                            headerRight: () => (
+                                <Link href={'/question/create'}>
+                                    <PlusSquare mr={isWeb && '$5'} size="$2" cur="pointer"/>
+                                </Link>
+                            )
+                        }}
+                    />
+
+                    <Stack.Screen
+                        name="question/[id]"
+                        options={{
+                            title: "Question Details",
+                            animation: "flip",
+                        }}
+                    />
+
+                    <Stack.Screen
+                        name="question/create"
+                        options={{
+                            title: "Create Question",
+                            animation: "slide_from_right",
+                            headerRight: () => (
+                                <Link href={''}>
+                                    <Save mr={isWeb && '$5'} size="$2" cur="pointer"/>
+                                </Link>
+                            )
                         }}
                     />
                 </Stack>
