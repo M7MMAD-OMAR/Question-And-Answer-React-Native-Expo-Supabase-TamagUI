@@ -1,1 +1,51 @@
-note because this is in a monorepo had to remove react, react-dom, and react-native-web deps and change metro.config.js a bit.
+# 005 - Full Complete Q&A Project using React Native Expo & Supabase and TamagUI - مشروع اسئلة وأجوبة كامل
+
+
+
+يهدف هذا المشروع إلى تطبيق المفاهيم التي تعلمناها سابقا مع بعض المفاهيم الجديدة التي تساعدنا في إنشاء مشروع برمجي كامل مع أستخدام قاعدة بيانات والمصادقة
+
+### نبذه عن المشروع:
+
+أريد تطبيق جوال حيث يمكنني إنشاء اسئلة ووضع لها أجوبة محددة بحيث يستطيع المستخدم العادي اختيار الجواب لكل سؤال ومن ثم إرسال الإجابة
+
+متطلبات المشروع:
+
+- عرض جميع الأسئلة
+إمكانية اختيار الجواب الصحيح لسؤال ما -
+- إمكانية إنشاء حساب وتسجيل الدخول
+- إمكانية إنشاء اسئلة جديدة للمستخدمين الذين يملكون حساب فقط
+
+### الأدوات المستخدمة:
+- React Native - Expo
+- Supabase
+- TamagUI
+- WebStorm
+
+## Introduction
+
+Create new project
+
+`
+npm create tamagui@latest
+`
+
+### بدائل للمكتبة TamagUI
+
+2.1  React Native Paper
+
+مكتبة مكونات مفتوحة المصدر تعتمد على Google’s Material Design. توفر مكونات جاهزة للواجهة مع دعم لخاصية الـ theming وتكون قابلة للتخصيص.
+
+2.2 NativeBase
+
+مكتبة توفر مكونات قابلة للتخصيص بالكامل ويدعم كل من React و React Native. تقدم NativeBase مجموعة كبيرة من المكونات مع دعم themes.
+
+2.3 Dripsy
+
+مكتبة خفيفة تعتمد على styled-system، تساعد في إنشاء واجهات مستخدم متجاوبة بسهولة في React Native وWeb. تقدم دعماً جيداً لـ theming والأنماط المتجاوبة.
+
+
+
+
+
+
+
